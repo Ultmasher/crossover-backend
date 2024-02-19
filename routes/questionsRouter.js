@@ -5,4 +5,4 @@ const questionsRouter = express.Router();
 
 questionsRouter.get('/', getQuestions);
 
-export default questionsRouter;h
+export default questionsRouter;
