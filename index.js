@@ -7,6 +7,8 @@ dotenv.config();
 const port = 3000;
 const app = express();
 
+// Create routes
+
 app.use(cors());
 app.use('/', questionsRouter);
 app.use(express.json());
@@ -14,6 +16,8 @@ app.use(express.json());
 app.get('/', (req , res) => {
     res.send('Welcome to the Crossover Quiz API');
 });
+
+// Create server
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
