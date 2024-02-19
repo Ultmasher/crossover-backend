@@ -3,7 +3,6 @@ import getQuestions from '../controllers/quizController.js';
 
 const questionsRouter = express.Router();
 
-questionsRouter.get('/quiz', getQuestions);
 questionsRouter.get('/', getQuestions);
 
-export default questionsRouter;
+export default questionsRouter;h
